@@ -1,0 +1,46 @@
+:root{
+    --blue: rgb(25, 34, 42);
+}
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 300px 900px ;
+    grid-template-rows: 50px 1fr 1fr 40px ;
+    gap: 10px;
+    overflow-x: hidden;
+    
+}
+.cards{
+    border: 1px solid rgb(19, 122, 50);
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+}
+#header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#sidebar{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#main-content{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#quick-link-tab{
+
+}
+#contact-us{
+
+}
+#footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
